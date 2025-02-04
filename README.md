@@ -64,12 +64,16 @@ Activate the virtual environment:
 source myenv/bin/activate
 ```
 
+<br>
+
 ## 📦 Dependencies
 
 - FastAPI
 - Uvicorn
 - httpx
 - Python Standard Library
+
+<br>
 
 ## 🔧 Installation
 
