@@ -19,7 +19,7 @@ This is a comprehensive mathematical classification and analysis API for integer
 
 <br>To install these, follow the steps below...
 
-P.s. The steps below are for installing on an Ubuntu-based Linux machine. <br>
+P.s. The steps below are for installing on an Ubuntu-based Linux machine. <br><br>
 
 1. **Installing Python 3.9+**
 
@@ -34,7 +34,7 @@ Verify the installation by running:
 python3 --version
 ```
 
-It should ouput something like, `Python 3.9.x` <br>
+It should ouput something like, `Python 3.9.x` <br><br>
 
 2. **Installing Pip**
 
