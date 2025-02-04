@@ -21,16 +21,16 @@ This is a comprehensive mathematical classification and analysis API for integer
 
 P.s. The steps below are for installing on an Ubuntu-based Linux machine. <br><br>
 
-1. **Installing Python 3.9+**
+**1\.Installing Python 3.9+**
 
-```
+```bash
 sudo apt update
 sudo apt install -y python3 python3-pip python3-venv
 ```
 
 Verify the installation by running:
 
-```
+```bash
 python3 --version
 ```
 
@@ -38,13 +38,13 @@ It should ouput something like, `Python 3.9.x` <br><br>
 
 **2\. Installing Pip**
 
-```
+```bash
 sudo apt install -y python3-pip
 ```
 
 It should ouput something like:
 
-```
+```bash
 pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.9)
 ```
 
@@ -54,13 +54,13 @@ pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.9)
 
 Create a virtual environment in the project directory:
 
-```
+```bash
 python3 -m venv myenv
 ```
 
 Activate the virtual environment:
 
-```
+```bash
 source myenv/bin/activate
 ```
 
@@ -82,7 +82,7 @@ cd number-classification-api
 ### 2. Create Virtual Environment
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+source venv/bin/activate 
 ```
 
 ### 3. Install Dependencies
@@ -101,6 +101,8 @@ uvicorn app:app --reload --host 0.0.0.0 --port 8000
 ```bash
 uvicorn app:app --host 0.0.0.0 --port 8000
 ```
+
+<br>
 
 ## 🌐 API Endpoints
 
