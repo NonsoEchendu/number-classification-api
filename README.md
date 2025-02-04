@@ -34,7 +34,7 @@ Verify the installation by running:
 python3 --version
 ```
 
-It should ouput something like, `Python 3.9.x` <br><br>
+It should ouput something like, `Python 3.12.3` <br><br>
 
 **2\. Installing Pip**
 
@@ -51,7 +51,7 @@ pip3 --version
 It should ouput something like:
 
 ```bash
-pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.9)
+pip 24.0 from /usr/lib/python3/dist-packages/pip (python 3.12)
 ```
 
 **3\. Set up a Virtual Environment**
