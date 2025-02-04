@@ -16,13 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Root route
-@app.get("/")
-async def root():
-    return {"message": "Number Classification API is running"}
-
 def is_prime(n: int) -> bool:
-    """Check if a number is prime."""
     if n < 2:
         return False
     for i in range(2, int(math.sqrt(n)) + 1):
@@ -31,21 +25,27 @@ def is_prime(n: int) -> bool:
     return True
 
 def is_perfect_number(n: int) -> bool:
-    """Check if a number is a perfect number."""
     if n <= 0:
         return False
     divisor_sum = sum(i for i in range(1, n) if n % i == 0)
     return divisor_sum == n
 
 def is_armstrong_number(n: int) -> bool:
-    """Check if a number is an Armstrong number."""
     num_str = str(n)
     power = len(num_str)
     return sum(int(digit) ** power for digit in num_str) == n
 
+def generate_armstrong_fun_fact(number: int) -> str:
+    num_str = str(number)
+    power = len(num_str)
+    calculation = ' + '.join([f'{digit}^{power}' for digit in num_str])
+    return f"{number} is an Armstrong number because {calculation} = {number}"
+
 async def get_fun_fact(number: int) -> str:
-    """Fetch a fun fact about the number from Numbers API."""
     try:
+        if is_armstrong_number(number):
+            return generate_armstrong_fun_fact(number)
+        
         async with httpx.AsyncClient() as client:
             response = await client.get(f"http://numbersapi.com/{number}")
             return response.text if response.status_code == 200 else "No fun fact available"
@@ -54,8 +54,6 @@ async def get_fun_fact(number: int) -> str:
 
 @app.get("/api/classify-number")
 async def classify_number(number: str = Query(None, description="Number to classify")):
-    """Classify a number and return its properties."""
-    # Check if number parameter is provided
     if number is None:
         return JSONResponse(
             status_code=400,
@@ -66,7 +64,6 @@ async def classify_number(number: str = Query(None, description="Number to class
             }
         )
     
-    # Validate input is an integer
     try:
         number = int(number)
     except ValueError:
@@ -81,7 +78,6 @@ async def classify_number(number: str = Query(None, description="Number to class
     
     properties = []
     
-    # Determine number properties
     if number % 2 == 1:
         properties.append("odd")
     else:
@@ -96,10 +92,8 @@ async def classify_number(number: str = Query(None, description="Number to class
     if is_armstrong_number(number):
         properties.append("armstrong")
     
-    # Get digit sum
     digit_sum = sum(int(digit) for digit in str(number))
     
-    # Get fun fact
     fun_fact = await get_fun_fact(number)
     
     return {
