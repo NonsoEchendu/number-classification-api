@@ -144,6 +144,7 @@ curl "http://localhost:8000/api/classify-number?number=371"
     "error": true
 }
 ```
+<br>
 
 ## 🔍 Number Properties Analyzed
 
@@ -153,10 +154,14 @@ curl "http://localhost:8000/api/classify-number?number=371"
 - Armstrong Number
 - Digit Sum
 
+<br>
+
 ## 📋 Error Handling
 
 - Non-integer inputs trigger 400 Bad Request
 - Graceful error responses with descriptive messages
+
+<br>
 
 ## 🐳 Docker Support
 
@@ -170,11 +175,15 @@ docker build -t number-classification-api .
 docker run -p 8000:8000 number-classification-api
 ```
 
+<br>
+
 ## 🔐 Security
 
 - CORS configured for all origins
 - Input validation
 - Async architecture prevents blocking
+
+<br>
 
 ## 🧪 Testing
 
@@ -184,9 +193,13 @@ docker run -p 8000:8000 number-classification-api
 pytest
 ```
 
+<br>
+
 ## 📝 License
 
 [Add your license information]
+
+<br>
 
 ## 🤝 Contributing
 
@@ -195,6 +208,8 @@ pytest
 3. Commit changes
 4. Push to branch
 5. Create pull request
+
+<br>
 
 ## 📞 Support
 
