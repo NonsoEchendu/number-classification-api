@@ -116,14 +116,22 @@ curl "http://localhost:8000/api/classify-number?number=371"
 #### Successful Response (200 OK)
 ```json
 {
-    "number": 371,
+    "number": 153,
     "is_prime": false,
     "is_perfect": false,
-    "properties": ["armstrong", "odd"],
-    "digit_sum": 11,
-    "fun_fact": "371 is an Armstrong number because 3^3 + 7^3 + 1^3 = 371"
+    "properties": [
+      "odd",
+      "armstrong"
+    ],
+    "digit_sum": 9,
+    "fun_fact": "153 is the ordinal number of the coat of arms of Komi Republic in the State Heraldic Register of the Russian Federation."
 }
 ```
+
+On browser, here's how it looks:
+
+![alt text](<Screenshot 2025-02-04 at 18.25.12.png>)
+
 
 #### Error Response (400 Bad Request)
 ```json
