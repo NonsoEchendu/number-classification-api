@@ -17,7 +17,7 @@ This is a comprehensive mathematical classification and analysis API for integer
 - pip
 - Virtual Environment (recommended)
 
-To install these, follow the steps below...
+<br>To install these, follow the steps below...
 
 P.s. The steps below are for installing on an Ubuntu-based Linux machine.
 
