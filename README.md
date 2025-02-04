@@ -184,4 +184,4 @@ Contributions are welcome! To contribute do the following:
 
 ## 💡 Future Improvements
 
-- Web Interface: Provide a dashboard with an interactive UI display to input desired numbers and view the fun fact and other information.
+- Web Interface: Provide a dashboard to allow users input desired numbers and view the fun fact and other information.
