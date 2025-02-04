@@ -21,7 +21,7 @@ This is a comprehensive mathematical classification and analysis API for integer
 
 P.s. The steps below are for installing on an Ubuntu-based Linux machine. <br><br>
 
-**1\.Installing Python 3.9+**
+1. **Installing Python 3.9+**
 
 ```
 sudo apt update
@@ -46,11 +46,9 @@ It should ouput something like:
 
 ```
 pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.9)
-``` 
+```
 
-<br><br>
-
-**3\.Set up a Virtual Environment**
+3. **Set up a Virtual Environment**
 
 Create a virtual environment in the project directory:
 
