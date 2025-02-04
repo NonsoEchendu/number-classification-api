@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a comprehensive mathematical classification and analysis API for integer inputs. Ii takes a number and returns interesting mathematical proterties about the number, along with a fun fact.
+This is a comprehensive mathematical classification and analysis API for integer inputs. It takes a number and returns interesting mathematical proterties about the number, along with a fun fact.
 
 ## 🚀 Features
 
@@ -17,7 +17,7 @@ This is a comprehensive mathematical classification and analysis API for integer
 - pip
 - Virtual Environment (recommended)
 
-<br>To install these, follow the steps below...
+To install these, follow the steps below...
 
 P.s. The steps below are for installing on an Ubuntu-based Linux machine. <br><br>
 
