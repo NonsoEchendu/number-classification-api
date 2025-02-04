@@ -48,8 +48,6 @@ It should ouput something like:
 pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.9)
 ```
 
-<br>
-
 **3\. Set up a Virtual Environment**
 
 Create a virtual environment in the project directory:
@@ -64,16 +62,12 @@ Activate the virtual environment:
 source myenv/bin/activate
 ```
 
-<br>
-
 ## 📦 Dependencies
 
 - FastAPI
 - Uvicorn
 - httpx
 - Python Standard Library
-
-<br>
 
 ## 🔧 Installation
 
@@ -105,8 +99,6 @@ uvicorn app:app --reload --host 0.0.0.0 --port 8000
 ```bash
 uvicorn app:app --host 0.0.0.0 --port 8000
 ```
-
-<br>
 
 ## 🌐 API Endpoints
 
@@ -144,7 +136,6 @@ curl "http://localhost:8000/api/classify-number?number=371"
     "error": true
 }
 ```
-<br>
 
 ## 🔍 Number Properties Analyzed
 
@@ -154,14 +145,10 @@ curl "http://localhost:8000/api/classify-number?number=371"
 - Armstrong Number
 - Digit Sum
 
-<br>
-
 ## 📋 Error Handling
 
 - Non-integer inputs trigger 400 Bad Request
 - Graceful error responses with descriptive messages
-
-<br>
 
 ## 🐳 Docker Support
 
@@ -175,8 +162,6 @@ docker build -t number-classification-api .
 docker run -p 8000:8000 number-classification-api
 ```
 
-<br>
-
 ## 🔐 Security
 
 - CORS configured for all origins
@@ -189,8 +174,6 @@ docker run -p 8000:8000 number-classification-api
 
 This project is licensed under the [MIT License](https://opensource.org/license/MIT).
 
-<br>
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -198,8 +181,6 @@ This project is licensed under the [MIT License](https://opensource.org/license/
 3. Commit changes
 4. Push to branch
 5. Create pull request
-
-<br>
 
 ## 💡 Future Improvements
 
