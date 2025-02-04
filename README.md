@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This FastAPI-based microservice provides comprehensive mathematical classification and analysis for integer inputs.
+This is a comprehensive mathematical classification and analysis API for integer inputs. Ii takes a number and returns interesting mathematical proterties about the number, along with a fun fact.
 
 ## 🚀 Features
 
@@ -16,6 +16,51 @@ This FastAPI-based microservice provides comprehensive mathematical classificati
 - Python 3.9+
 - pip
 - Virtual Environment (recommended)
+
+To install these, follow the steps below...
+
+P.s. The steps below are for installing on an Ubuntu-based Linux machine.
+
+1. **Installing Python 3.9+**
+
+```
+sudo apt update
+sudo apt install -y python3 python3-pip python3-venv
+```
+
+Verify the installation by running:
+
+```
+python3 --version
+```
+
+It should ouput something like, `Python 3.9.x`
+
+2. **Installing Pip**
+
+```
+sudo apt install -y python3-pip
+```
+
+It should ouput something like:
+
+```
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.9)
+```
+
+3. **Set up a Virtual Environment**
+
+Create a virtual environment in the project directory:
+
+```
+python3 -m venv myenv
+```
+
+Activate the virtual environment:
+
+```
+source myenv/bin/activate
+```
 
 ## 📦 Dependencies
 
