@@ -77,6 +77,9 @@ async def classify_number(number: str = Query(None, description="Number to class
         )
     
     properties = []
+
+    if is_armstrong_number(number):
+        properties.append("armstrong")
     
     if number % 2 == 1:
         properties.append("odd")
@@ -88,9 +91,6 @@ async def classify_number(number: str = Query(None, description="Number to class
     
     if is_perfect_number(number):
         properties.append("perfect")
-    
-    if is_armstrong_number(number):
-        properties.append("armstrong")
     
     digit_sum = sum(int(digit) for digit in str(number))
     
