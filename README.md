@@ -54,20 +54,6 @@ It should ouput something like:
 pip 24.0 from /usr/lib/python3/dist-packages/pip (python 3.12)
 ```
 
-**3\. Set up a Virtual Environment**
-
-Create a virtual environment in the project directory:
-
-```bash
-python3 -m venv myenv
-```
-
-Activate the virtual environment:
-
-```bash
-source myenv/bin/activate
-```
-
 ## 📦 Dependencies
 
 - FastAPI
@@ -98,13 +84,17 @@ pip install -r requirements.txt
 
 ### Development Mode
 ```bash
-uvicorn app:app --reload --host 0.0.0.0 --port 8000
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ### Production Deployment
 ```bash
-uvicorn app:app --host 0.0.0.0 --port 8000
+uvicorn main:app --host 0.0.0.0 --port 8000
 ```
+
+It should look like this if it starts successfully:
+
+![terminal-app-successful](<Screenshot 2025-02-04 at 18.04.37.png>)
 
 ## 🌐 API Endpoints
 
