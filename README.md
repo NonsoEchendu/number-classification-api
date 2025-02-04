@@ -48,7 +48,7 @@ It should ouput something like:
 pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.9)
 ``` 
 
-<br>
+<br><br>
 
 **3\.Set up a Virtual Environment**
 
