@@ -185,19 +185,9 @@ docker run -p 8000:8000 number-classification-api
 
 <br>
 
-## 🧪 Testing
-
-### Run Tests
-```bash
-# Add testing command (placeholder)
-pytest
-```
-
-<br>
-
 ## 📝 License
 
-[Add your license information]
+This project is licensed under the [MIT License](https://opensource.org/license/MIT).
 
 <br>
 
@@ -211,6 +201,6 @@ pytest
 
 <br>
 
-## 📞 Support
+## 💡 Future Improvements
 
-For issues or questions, please [add contact method or issue tracker link]
+- Web Interface: Provide a dashboard with an interactive UI display to input desired numbers and view the fun fact and other information.
