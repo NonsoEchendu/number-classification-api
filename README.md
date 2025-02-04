@@ -42,6 +42,12 @@ It should ouput something like, `Python 3.9.x` <br><br>
 sudo apt install -y python3-pip
 ```
 
+Verify Intall:
+
+```
+pip3 --version
+```
+
 It should ouput something like:
 
 ```bash
