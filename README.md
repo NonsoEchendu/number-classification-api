@@ -92,7 +92,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
-It should look like this if it starts successfully:
+It should look like this if it starts successfully: 
 
 ![terminal-app-successful](<Screenshot 2025-02-04 at 18.04.37.png>)
 
