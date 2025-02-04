@@ -47,7 +47,7 @@ async def get_fun_fact(number: int) -> str:
             return generate_armstrong_fun_fact(number)
         
         async with httpx.AsyncClient() as client:
-            response = await client.get(f"http://numbersapi.com/{number}")
+            response = await client.get(f"http://numbersapi.com/{number}/json")
             return response.text if response.status_code == 200 else "No fun fact available"
     except Exception:
         return "No fun fact available"
