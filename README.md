@@ -168,13 +168,13 @@ docker run -p 8000:8000 number-classification-api
 - Input validation
 - Async architecture prevents blocking
 
-<br>
-
 ## 📝 License
 
 This project is licensed under the [MIT License](https://opensource.org/license/MIT).
 
 ## 🤝 Contributing
+
+Contributions are welcome! To contribute do the following:
 
 1. Fork the repository
 2. Create feature branch
