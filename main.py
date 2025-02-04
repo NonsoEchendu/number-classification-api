@@ -1,5 +1,5 @@
 import math
-from fastapi import FastAPI, Query, HTTPException, Request
+from fastapi import FastAPI, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import httpx
@@ -20,17 +20,6 @@ app.add_middleware(
 @app.get("/")
 async def root():
     return {"message": "Number Classification API is running"}
-
-# Global exception handler for non-integer inputs
-@app.exception_handler(ValueError)
-async def value_error_handler(request: Request, exc: ValueError):
-    return JSONResponse(
-        status_code=400,
-        content={
-            "number": request.query_params.get("number", "unknown"),
-            "error": True
-        }
-    )
 
 def is_prime(n: int) -> bool:
     """Check if a number is prime."""
@@ -64,13 +53,31 @@ async def get_fun_fact(number: int) -> str:
         return "No fun fact available"
 
 @app.get("/api/classify-number")
-async def classify_number(number: str = Query(..., description="Number to classify")):
+async def classify_number(number: str = Query(None, description="Number to classify")):
     """Classify a number and return its properties."""
+    # Check if number parameter is provided
+    if number is None:
+        return JSONResponse(
+            status_code=400,
+            content={
+                "error": True,
+                "message": "Number parameter is required",
+                "number": None
+            }
+        )
+    
     # Validate input is an integer
     try:
         number = int(number)
     except ValueError:
-        raise ValueError(f"Invalid input: {number}")
+        return JSONResponse(
+            status_code=400,
+            content={
+                "number": number,
+                "error": True,
+                "message": "Invalid number format"
+            }
+        )
     
     properties = []
     
