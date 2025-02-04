@@ -75,7 +75,7 @@ source myenv/bin/activate
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/number-classification-api.git
+git clone https://github.com/NonsoEchendu/number-classification-api.git
 cd number-classification-api
 ```
 
