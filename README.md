@@ -110,7 +110,7 @@ It should look like this if it starts successfully:
 
 #### Example Request
 ```bash
-curl "http://localhost:8000/api/classify-number?number=371"
+curl "http://localhost:8000/api/classify-number?number=153"
 ```
 
 #### Successful Response (200 OK)
