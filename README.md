@@ -36,7 +36,7 @@ python3 --version
 
 It should ouput something like, `Python 3.9.x` <br><br>
 
-2. **Installing Pip**
+**2\. Installing Pip**
 
 ```
 sudo apt install -y python3-pip
