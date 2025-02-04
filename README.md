@@ -1,7 +1,3 @@
-# number-classification-api
-
-# number-classification-api
-
 # Number Classification API
 
 ## Project Overview
